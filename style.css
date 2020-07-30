@@ -1,0 +1,242 @@
+body{
+    padding: 3rem 0 0 0;
+    margin: 0;
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+header{
+    color: #fafafa;
+    text-align: center;
+    padding: 1rem;
+    background-color: #120136;
+    background-image: url('img/background.jpg');  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,h2{
+    margin: 0;
+}
+
+header h1{
+    color: #fcbf1e;
+    padding: 3rem;
+    font-weight: 300;
+    font-size: 5rem;
+}
+
+nav{
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #281557;
+    position: fixed;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li{
+    padding: 0.5rem;
+}
+
+nav ul li a{
+    font-size: 1rem;
+    color: #fafafa;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 150ms ease-out;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: #111;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fcbf1e;
+}
+
+article{
+    background-color: #fafafa;
+    padding: 1rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+th, td{
+    height: 3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+}
+
+.social ul li{
+    padding: 0.5rem;
+}
+
+.social ul li img{
+    height: 2rem;
+}
+
+.col-group{
+    display: flex;
+}
+
+.col-group .col{
+    flex-grow: 1;
+}
+
+.img-message{
+    background-image: url('img/mensaje.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+
+.contacto img{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.form-group{
+    flex-direction: row;
+    display: flex;
+    padding: 0.3em;
+}
+
+form .form-group label{
+    width: 5em;
+    padding: 1em;
+    text-align: right;
+}
+
+form .form-group input,form .form-group select,form .form-group textarea{
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 150ms ease-out;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+    padding: 1em;
+    flex-grow: 1;
+}
+
+form .form-group input:focus,form .form-group select:focus,form .form-group textarea:focus{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+form .form-group textarea{
+    resize: none;
+}
+
+form .form-group input[type='submit']{
+    background-color: #fcbf1e;
+}
+
+form .form-group input[type='submit']:hover{
+    background-color: #ffd153;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    body{
+        padding: 0;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    article{
+        margin: 0;
+        box-shadow: none;
+    }
+
+    article>h2{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .img-message{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        padding: 3rem 0 0 0;
+    }
+
+    .container{
+        width: 992px;
+    }
+
+    nav{
+        position: fixed;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+    
+    article{
+        margin: 1rem 0;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+    
+    article>h2{
+        padding-top: 5rem;
+        margin-top: -5rem;
+    }
+
+    .img-message{
+        display: block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 1200px;
+    }
+}
