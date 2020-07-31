@@ -31,7 +31,7 @@ const smoothScrolling = () => {
 
 const firebaseConfig = () => {
     // Your web app's Firebase configuration
-    var firebaseConfig = {
+    var config = {
         apiKey: "AIzaSyDeP4Mm81iMibJuzJhfn49QZm-OT1hydk4",
         authDomain: "aboutme-23131.firebaseapp.com",
         databaseURL: "https://aboutme-23131.firebaseio.com",
@@ -40,10 +40,10 @@ const firebaseConfig = () => {
         messagingSenderId: "969813473305",
         appId: "1:969813473305:web:1ce38e4b0c5dbfe7ae9288",
         measurementId: "G-X6V177FV8D"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+      };
+      // Initialize Firebase
+      firebase.initializeApp(config);
+      firebase.analytics();
 }
 
 const sendFormData = async (event) => {
