@@ -158,7 +158,7 @@ form .form-group textarea{
     resize: none;
 }
 
-form .form-group input[type='submit']{
+form input[type='submit'],button,.btn {
     background-color: #fcbf1e;
 }
 
@@ -166,6 +166,21 @@ form .form-group input[type='submit']:hover{
     background-color: #ffd153;
 }
 
+.bg-green {
+    background-color: #25ad35 !important;
+}
+
+form input[type='submit'].bg-green:hover,button.bg-green:hover,.btn.bg-green:hover{
+    background-color: #3fb34d !important;
+}
+
+.bg-red {
+    background-color: #ad2525 !important;
+}
+
+form input[type='submit'].bg-red:hover,button.bg-red:hover,.btn.bg-red:hover{
+    background-color: #b33f3f !important;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
