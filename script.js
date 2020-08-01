@@ -58,7 +58,8 @@ const sendFormData = async (event) => {
         'email': email.value,
         'phone': phone.value,
         'subject': subject.value,
-        'body': body.value
+        'body': body.value,
+        'timestamp': firebase.database.ServerValue.TIMESTAMP
     };
 
     const submitElement = document.getElementById("submit");
